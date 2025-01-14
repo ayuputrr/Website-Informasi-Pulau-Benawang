@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Desa</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .card img {
+            width: 60%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        p {
+            text-align: justify;
+        }
+        ul, ol {
+            text-align: justify;
+        }
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-section img {
+    max-width: 100px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logotngg.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+            <a href="berandafix.html">HOME</a>
+            <a href="profilfix.html" class="active">PROFIL DESA</a>
+            <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
+            <a href="infofix.html">INFORMASI</a>
+        </nav>
+    </header>
+
+    <section id="sekolah">
+        <h2 class="section-title">Sekolah-Sekolah di Desa</h2>
+        <div class="card">
+            <img src="pantai.jpeg" alt="Foto Sekolah">
+            <h3 style="text-align: center;">SD Negeri 1 Pekon Pulau Benawang</h3>
+            <p>SDN 1 Pekon Pulau Benawang merupakan satu-satunya SD yang beroprasi di pekon pulau benawang dengan jumlah siswa yang terhitung saat ini adalah 80 siswa, SD ini merupakan </p>
+        </div>
+    </section>
+
+    <section id="kegiatan">
+        <h2 class="section-title">Kegiatan Desa</h2>
+        <div class="card">
+            <img src="pekon.jpeg" alt="Foto Posyandu Raflesia">
+            <h3 style="text-align: center;">Posyandu Raflesia</h3>
+            <p>Waktu: Setiap tanggal 16 atau 17</p>
+            <p>Deskripsi: Posyandu Raflesia adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesehatan dan tumbuh kembang anak-anak...</p>
+        </div>
+        <div class="card">
+            <img src="pekon.jpeg" alt="Foto Posyandu Secancanan">
+            <h3 style="text-align: center;">Posyandu Secancanan</h3>
+            <p>Waktu: Setiap tanggal 16 atau 17</p>
+            <p>Deskripsi: Posyandu Secancanan adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesejahteraan lansia...</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+
+                <h3 style="text-align: left;">Alamat Desa</h3>
+                <p>Pekon Pulau Benawang</p>
+                <p>Kecamatan Kota Agung Barat</p>
+                <p>Kabupaten Tanggamus</p>
+            </div>
+            <div class="footer-section">
+
+                <h3 style="text-align: left;">Kontak</h3>
+                <p>Telepon: (021) 12345678</p>
+                <p>Email: info@desaxyz.id</p>
+            </div>
+            <div class="footer-section">
+
+                <h3 style="text-align: left;">Jam Operasional</h3>
+                <p>Senin - Jumat: 08.00 - 16.00</p>
+                <p>Sabtu, Minggu & Hari Libur: Tutup</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <pc class="center-text">&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
