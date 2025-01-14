@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative;
+            background-image: url('pekon.jpeg'); /* Ganti URL ini dengan gambar latar Anda */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block; /* Tetap horizontal */
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: left;
+        }
+        p {
+            text-align: justify;
+        }
+        ul, ol {
+            text-align: justify;
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+    text-align: center;     /* Teks rata tengah */
+}
+
+.footer-section {
+    flex: 1 1 100%; /* Pastikan semua elemen berada di tengah */
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Ubah elemen jadi vertikal */
+        align-items: center;    /* Pusatkan semua elemen */
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <img src="logotngg.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <a href="berandafix.html">HOME</a>
+        <a href="profilfix.html" class="active">PROFIL DESA</a>
+        <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
+        <a href="infofix.html">INFORMASI</a>
+    </nav>
+    
+    <header>
+        <h1>Selamat Datang di Desa Pulau Benawang</h1>
+        <p style="text-align: center;">Pulau Benawang - Tanggamus</p>
+    </header>
+    
+    <section class="content">
+        <h2>Pekon Pulau Benawang</h2>
+        <p>
+            Pekon Pulau Benawang adalah desa terpencil yang mengalami pemekaran wilayah karena ledakan penduduk. Kini terbagi menjadi tiga dusun, desa ini berkembang dengan masyarakat yang mandiri dan harmonis.
+        </p>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 style="text-align: left;">Alamat Desa</h3>
+                <p class="text-align : left;">Pekon Pulau Benawang</p>
+                <p class="text-align : left;">Kecamatan Kota Agung Barat</p>
+                <p class="text-align : left;"> Kabupaten Tanggamus</p>
+ 
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left;">Kontak</h3>
+                <p class="text-align : left;">Telepon: (021) 12345678</p>
+                <p class="text-align : left;">Email: info@desaxyz.id</p>
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left; ">Jam Operasional</h3>
+                <p class="text-align : left;">Senin - Jumat: 08.00 - 16.00</p>
+                <p class="text-align : left;">Sabtu, Minggu & Hari Libur: Tutup</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <pc class="center-text">&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
