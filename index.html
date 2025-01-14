@@ -11,15 +11,17 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            position: relative;
-            background-image: url('pekon.jpeg'); /* Ganti URL ini dengan gambar latar Anda */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
+       header {
+         position: relative;
+         background-image: url('pantai.jpeg'); 
+         background-size: cover;
+         background-position: center;
+         color: white;
+         text-align: center;
+         padding: 100px 20px;
+         filter: blur(2px); 
         }
+
         header h1 {
             font-size: 3em;
             margin: 0;
@@ -29,24 +31,28 @@
             margin: 10px 0 0;
         }
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            text-align: center;
+        background-color: rgba(255, 255, 255, 0.3); 
+        backdrop-filter: blur(10px); 
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
         }
         nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: inline-block; /* Tetap horizontal */
-            transition: background-color 0.3s;
+        color: black;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: inline-block;
+        transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #4CAF50;
+        background-color: #4CAF50;
+        color: white;
         }
         nav a.active {
-            background-color: #4CAF50;
+        background-color: #4CAF50;
+        color: white; 
         }
         section {
             padding: 20px;
