@@ -11,25 +11,42 @@
             margin: 0;
             padding: 0;
         }
-       header {
-         position: relative;
-         background-image: url('pantai.jpeg'); 
-         background-size: cover;
-         background-position: center;
-         color: white;
-         text-align: center;
-         padding: 100px 20px;
-         filter: blur(2px); 
-        }
+        header {
+    position: relative;
+    height: 300px; 
+    overflow: hidden;
+}
 
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-        }
+.header-bg {
+    background-image: url('aset/pantai.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Blur hanya pada background */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    text-align: center;
+    padding: 100px 25px;
+}
+
+.header-content h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
         nav {
         background-color: rgba(255, 255, 255, 0.3); 
         backdrop-filter: blur(10px); 
@@ -54,6 +71,7 @@
         background-color: #4CAF50;
         color: white; 
         }
+
         section {
             padding: 20px;
             text-align: center;
@@ -82,11 +100,11 @@
             text-align: justify;
         }
         footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        }
 
 .footer-container {
     max-width: 1200px;
@@ -94,11 +112,11 @@
     display: flex;
     flex-wrap: wrap;
    
-    text-align: center;     /* Teks rata tengah */
+    text-align: center;    
 }
 
 .footer-section {
-    flex: 1 1 100%; /* Pastikan semua elemen berada di tengah */
+    flex: 1 1 100%; 
     margin: 10px 0;
     text-align: center;
 }
@@ -126,11 +144,11 @@
     text-align: center;
 }
 
-/* Responsif untuk layar kecil */
+
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Ubah elemen jadi vertikal */
-        align-items: center;    /* Pusatkan semua elemen */
+        flex-direction: column;
+        align-items: center;    
     }
 
     .footer-section {
@@ -141,18 +159,20 @@
 </style>
 </head>
 <body>
-     <nav>
-        <img src="logotngg.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
-        <a href="index.html" >BERANDA</a>
-        <a href="profilfix.html">PROFIL DESA</a>
+    <nav>
+        <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <a href="index.html" class="active">BERANDA</a>
+        <a href="profilfix.html" >PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
         <a href="infofix.html">INFORMASI</a>
     </nav>
     
-    
     <header>
-        <h1>Selamat Datang di Desa Pulau Benawang</h1>
-        <p style="text-align: center;">Pulau Benawang - Tanggamus</p>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>Selamat Datang di Desa Pulau Benawang</h1>
+            <p style="text-align: center;">Pulau Benawang - Tanggamus</p>
+        </div>
     </header>
     
     <section class="content">
@@ -166,15 +186,12 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3 style="text-align: left;">Alamat Desa</h3>
-                <p class="text-align : left;">Pekon Pulau Benawang</p>
-                <p class="text-align : left;">Kecamatan Kota Agung Barat</p>
-                <p class="text-align : left;"> Kabupaten Tanggamus</p>
- 
+                <p><a href="https://maps.app.goo.gl/a7JXfiwTRT188GNv9" target="_blank">Dusun II Pematang Buah, Pulau Benawang, Kota Agung Barat, Tanggamus</a></p>
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
                 <p class="text-align : left;">Telepon: (021) 12345678</p>
-                <p class="text-align : left;">Email: info@desaxyz.id</p>
+                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left; ">Jam Operasional</h3>
