@@ -71,39 +71,29 @@
         }
         footer {
         background-color: #333;
-        color: white;
+        color:rgb(255, 255, 255);
         padding: 20px 0;
         text-align: center;
-        }
+}
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-   
-    text-align: center;    
+    justify-content: flex-start;
 }
 
 .footer-section {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
+    text-align: left;
     margin: 10px 0;
-    text-align: center;
+    padding: 0 15px;
 }
 
 .footer-section h3 {
+    color: #08d308; 
     margin-bottom: 15px;
-    color: #4CAF50;
-}
-
-.footer-section p, .footer-section a {
-    color: white;
-    text-decoration: none;
-    line-height: 1.6;
-}
-
-.footer-section a:hover {
-    color: #4CAF50;
 }
 
 .footer-bottom {
@@ -113,26 +103,47 @@
     font-size: 0.9em;
     text-align: center;
 }
+.footer-section p, 
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #00fff7; 
+    text-decoration: underline; 
+}
 
 
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        align-items: center;    
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .footer-section {
-        flex: 1 1 100%;
-        text-align: center;
+        padding: 0 15px; 
+    }
+
+    .footer-bottom {
+        text-align: center; 
     }
 }
 </style>
 </head>
 <body>
     <nav>
-        <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
-        <a href="index.html" class="active">BERANDA</a>
-        <a href="profilfix.html" >PROFIL DESA</a>
+        <img src="logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <a href="index.html" >BERANDA</a>
+        <a href="profilfix.html" class="active">PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
         <a href="infofix.html">INFORMASI</a>
     </nav>
@@ -143,15 +154,15 @@
     </header>
     
     <div style="
-    background-image: url('aset/pantai.jpeg'); 
+    background-image: url('pantai.jpeg'); 
     background-size: cover; 
     background-position: center; 
-    height: 200px; 
-    width: 70%; 
-    margin: 0 auto; 
-    margin-top: -150px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 200px; /* Tinggi foto */
+    width: 70%; /* Lebar foto */
+    margin: 0 auto; /* Pusatkan secara horizontal */
+    margin-top: -150px; /* Naikkan foto */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
 ">
 </div>
 
@@ -186,11 +197,11 @@
                 <h3 style="text-align: left;">Alamat Desa</h3>
                 <p><a href="https://maps.app.goo.gl/a7JXfiwTRT188GNv9" target="_blank">Dusun II Pematang Buah, Pulau Benawang, Kota Agung Barat, Tanggamus</a></p>
             </div>
-            
+
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
                 <p class="text-align : left;">Telepon: (021) 12345678</p>
-                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
+                <p class="text-align : left;">Email: info@desaxyz.id</p>
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left; ">Jam Operasional</h3>
