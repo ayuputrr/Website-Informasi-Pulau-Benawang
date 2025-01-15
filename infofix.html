@@ -74,69 +74,87 @@
             text-align: justify;
         }
         footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        .footer-section {
-            flex: 1 1 100%;
-            margin: 10px 0;
-            text-align: center;
-        }
-        .footer-section h3 {
-            margin-bottom: 15px;
-            color: #4CAF50;
-        }
-        .footer-section p, .footer-section a {
-            color: white;
-            text-decoration: none;
-            line-height: 1.6;
-        }
-        .footer-section a:hover {
-            color: #4CAF50;
-        }
-        .footer-bottom {
-            margin-top: 20px;
-            border-top: 1px solid #555;
-            padding-top: 10px;
-            font-size: 0.9em;
-            text-align: center;
-        }
-        @media (max-width: 768px) {
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-section {
-                flex: 1 1 100%;
-                text-align: center;
-            }
-            .photo-container img {
-                max-width: 100%;
-            }
-        }
+        background-color: #333;
+        color:rgb(255, 255, 255);
+        padding: 20px 0;
+        text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-section {
+    flex: 1 1 100%;
+    text-align: left;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    color: #08d308; 
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.footer-section p, 
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #00fff7; 
+    text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .footer-section {
+        padding: 0 15px; 
+    }
+
+    .footer-bottom {
+        text-align: center; 
+    }
+}
     </style>
 </head>
 <body>
     <nav>
-        <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
-        <a href="index.html" class="active">BERANDA</a>
+        <img src="logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <a href="index.html" >BERANDA</a>
         <a href="profilfix.html" >PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
-        <a href="infofix.html">INFORMASI</a>
+        <a href="infofix.html"class="active">INFORMASI</a>
     </nav>
     <section id="sekolah">
         <h2 class="section-title">Sekolah di Pekon Pulau Benawang</h2>
         <div class="photo-container">
-            <img src="aset/pantai.jpeg" alt="Foto Sekolah">
+            <img src="pantai.jpeg" alt="Foto Sekolah">
         </div>
         <div class="card">
             <h3 style="text-align: center;">SD Negeri 1 Pekon Pulau Benawang</h3>
@@ -147,7 +165,7 @@
     <section id="kegiatan">
         <h2 class="section-title">Kegiatan Desa</h2>
         <div class="photo-container">
-            <img src="aset/pekon.jpeg" alt="Foto Posyandu Raflesia">
+            <img src="pekon.jpeg" alt="Foto Posyandu Raflesia">
         </div>
         <div class="card">
             <h3 style="text-align: center;">Posyandu Raflesia</h3>
@@ -173,7 +191,7 @@
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
                 <p class="text-align : left;">Telepon: (021) 12345678</p>
-                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
+                <p class="text-align : left;">Email: info@desaxyz.id</p>
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left;">Jam Operasional</h3>
