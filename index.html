@@ -13,12 +13,12 @@
         }
         header {
     position: relative;
-    height: 300px; 
+    height: 300px; /* Sesuaikan tinggi header */
     overflow: hidden;
 }
 
 .header-bg {
-    background-image: url('aset/pantai.jpeg'); 
+    background-image: url('pantai.jpeg'); 
     background-size: cover;
     background-position: center;
     filter: blur(5px); /* Blur hanya pada background */
@@ -32,7 +32,7 @@
 
 .header-content {
     position: relative;
-    z-index: 2; 
+    z-index: 2; /* Teks berada di atas background */
     color: white;
     text-align: center;
     padding: 100px 25px;
@@ -99,41 +99,31 @@
         ul, ol {
             text-align: justify;
         }
-        footer {
+ footer {
         background-color: #333;
-        color: white;
+        color:rgb(255, 255, 255);
         padding: 20px 0;
         text-align: center;
-        }
+}
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-   
-    text-align: center;    
+    justify-content: flex-start;
 }
 
 .footer-section {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
+    text-align: left;
     margin: 10px 0;
-    text-align: center;
+    padding: 0 15px;
 }
 
 .footer-section h3 {
+    color: #08d308; 
     margin-bottom: 15px;
-    color: #4CAF50;
-}
-
-.footer-section p, .footer-section a {
-    color: white;
-    text-decoration: none;
-    line-height: 1.6;
-}
-
-.footer-section a:hover {
-    color: #4CAF50;
 }
 
 .footer-bottom {
@@ -143,24 +133,45 @@
     font-size: 0.9em;
     text-align: center;
 }
+.footer-section p, 
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+
+.footer-section a {
+    color: white; 
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #00fff7; 
+    text-decoration: underline; 
+}
 
 
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        align-items: center;    
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .footer-section {
-        flex: 1 1 100%;
-        text-align: center;
+        padding: 0 15px; 
+    }
+
+    .footer-bottom {
+        text-align: center; 
     }
 }
 </style>
 </head>
 <body>
     <nav>
-        <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <img src="logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
         <a href="index.html" class="active">BERANDA</a>
         <a href="profilfix.html" >PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
@@ -184,24 +195,25 @@
     
     <footer>
         <div class="footer-container">
-            <div class="footer-section">
-                <h3 style="text-align: left;">Alamat Desa</h3>
+            <div class="footer-section" style="text-align: left;">
+                <h3>Alamat Desa</h3>
                 <p><a href="https://maps.app.goo.gl/a7JXfiwTRT188GNv9" target="_blank">Dusun II Pematang Buah, Pulau Benawang, Kota Agung Barat, Tanggamus</a></p>
             </div>
-            <div class="footer-section">
-                <h3 style="text-align: left;">Kontak</h3>
-                <p class="text-align : left;">Telepon: (021) 12345678</p>
-                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
+            <div class="footer-section" style="text-align: left;">
+                <h3>Kontak</h3>
+                <p>Telepon: (021) 12345678</p>
+                <p>Email: pulaubenawang@gmail.com</p>
             </div>
-            <div class="footer-section">
-                <h3 style="text-align: left; ">Jam Operasional</h3>
-                <p class="text-align : left;">Senin - Jumat: 08.00 - 16.00</p>
-                <p class="text-align : left;">Sabtu, Minggu & Hari Libur: Tutup</p>
+            <div class="footer-section" style="text-align: left;">
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 08.00 - 16.00</p>
+                <p>Sabtu, Minggu & Hari Libur: Tutup</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <pc class="center-text">&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
+        <div class="footer-bottom" style="text-align: center;">
+            <p>&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
-</body>
+    
+    </body>
 </html>
