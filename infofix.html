@@ -56,17 +56,17 @@
             border-radius: 5px;
             text-align: left;
         }
-        .photo-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
         .photo-container img {
-            max-width: 30%;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+        max-width: 45%; /* Kurangi ukuran agar dua foto muat di satu baris */
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .photo-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
         p {
             text-align: justify;
         }
@@ -146,41 +146,47 @@
 <body>
     <nav>
         <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
-        <a href="index.html" >BERANDA</a>
+        <a href="index.html" class="active">BERANDA</a>
         <a href="profilfix.html" >PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
-        <a href="infofix.html"class="active">INFORMASI</a>
+        <a href="infofix.html">INFORMASI</a>
     </nav>
     <section id="sekolah">
         <h2 class="section-title">Sekolah di Pekon Pulau Benawang</h2>
-        <div class="photo-container">
-            <img src="aset/pantai.jpeg" alt="Foto Sekolah">
-        </div>
         <div class="card">
             <h3 style="text-align: center;">SD Negeri 1 Pekon Pulau Benawang</h3>
-            <p>SDN 1 Pekon Pulau Benawang merupakan satu-satunya SD yang beroprasi di pekon pulau benawang dengan jumlah siswa yang terhitung saat ini adalah 80 siswa, SD ini merupakan </p>
+            <div class="photo-container">
+                <img src="aset/pantai.jpeg" alt="Foto Sekolah">
+                <img src="zset/pantai.jpeg" alt="foto 2">
+            </div>
+            <p>SDN 1 Pekon Pulau Benawang merupakan satu-satunya SD yang beroperasi di pekon pulau benawang dengan jumlah siswa yang terhitung saat ini adalah 80 siswa...</p>
         </div>
     </section>
-
+    
     <section id="kegiatan">
         <h2 class="section-title">Kegiatan Desa</h2>
-        <div class="photo-container">
-            <img src="aset/pekon.jpeg" alt="Foto Posyandu Raflesia">
-        </div>
+        
         <div class="card">
             <h3 style="text-align: center;">Posyandu Raflesia</h3>
+            <div class="photo-container">
+                <img src="aset/pekon.jpeg" alt="Foto Posyandu Raflesia">
+                <img src="aset/pekon.jpeg" alt="Foto 2">
+            </div>
             <p>Waktu: Setiap tanggal 16 atau 17</p>
             <p>Deskripsi: Posyandu Raflesia adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesehatan dan tumbuh kembang anak-anak...</p>
         </div>
-        <div class="photo-container">
-            <img src="aset/pekon.jpeg" alt="Foto Posyandu Secancanan">
-        </div>
+        
         <div class="card">
             <h3 style="text-align: center;">Posyandu Secancanan</h3>
+            <div class="photo-container">
+                <img src="aset/pekon.jpeg" alt="Foto Posyandu Secancanan">
+                <img src="aset/pekon.jpeg" alt="foto 2">
+            </div>
             <p>Waktu: Setiap tanggal 16 atau 17</p>
             <p>Deskripsi: Posyandu Secancanan adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesejahteraan lansia...</p>
         </div>
     </section>
+    
 
     <footer>
         <div class="footer-container">
@@ -200,7 +206,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-        <p style="text-align: center;">&copy; 2025 Pekon Pulau Benawang</p>
+            <pc class="center-text">&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 </body>
