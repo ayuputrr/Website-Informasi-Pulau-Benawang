@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Desa</title>
+    <title>Website Desa</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
+        header {
+         position: relative;
+         height: 300px; 
+         overflow: hidden;
+        }
+
         nav {
         background-color: rgba(255, 255, 255, 0.3); 
         backdrop-filter: blur(10px); 
@@ -36,6 +41,7 @@
         background-color: #4CAF50;
         color: white; 
         }
+
         section {
             padding: 20px;
             text-align: center;
@@ -48,6 +54,7 @@
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
+        
         .card {
             background: #f9f9f9;
             border: 1px solid #ddd;
@@ -62,12 +69,12 @@
         ul, ol {
             text-align: justify;
         }
-    footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+        footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        }
 
 .footer-container {
     max-width: 1200px;
@@ -75,11 +82,11 @@
     display: flex;
     flex-wrap: wrap;
    
-    text-align: center;     /* Teks rata tengah */
+    text-align: center;    
 }
 
 .footer-section {
-    flex: 1 1 100%; /* Pastikan semua elemen berada di tengah */
+    flex: 1 1 100%; 
     margin: 10px 0;
     text-align: center;
 }
@@ -107,11 +114,11 @@
     text-align: center;
 }
 
-/* Responsif untuk layar kecil */
+
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Ubah elemen jadi vertikal */
-        align-items: center;    /* Pusatkan semua elemen */
+        flex-direction: column;
+        align-items: center;    
     }
 
     .footer-section {
@@ -119,70 +126,71 @@
         text-align: center;
     }
 }
-    </style>
+</style>
 </head>
 <body>
-    <header>
-       <nav>
-        <img src="logotngg.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
-        <a href="index.html" >BERANDA</a>
-        <a href="profilfix.html">PROFIL DESA</a>
+    <nav>
+        <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
+        <a href="index.html" class="active">BERANDA</a>
+        <a href="profilfix.html" >PROFIL DESA</a>
         <a href="sumberfix.html">SUMBER MATA PENCAHARIAN</a>
         <a href="infofix.html">INFORMASI</a>
     </nav>
     
-    
+    <header style="margin-bottom: 0;">
+        <h1 style="text-align: center; margin-bottom: 10px;">Profil Pekon</h1>
+        <p style="text-align: center; margin-bottom: 0;">Kenali Pekon Pulau Benawang Lebih Dekat</p>
     </header>
+    
+    <div style="
+    background-image: url('aset/pantai.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 200px; 
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: -150px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+">
+</div>
 
-    <section id="sekolah">
-        <h2 class="section-title">Sekolah-Sekolah di Desa</h2>
-        <div class="card">
-            <h3 style="text-align: center;"></h3style>SD Negeri 1 Pekon Pulau Benawang</h3>
-            <p>SDN 1 Pekon Pulau Benawang merupakan satu-satunya SD yang beroperasi di Pekon Pulau Benawang dengan jumlah siswa yang terhitung saat ini adalah 80 siswa. SD ini merupakan sekolah yang aktif mendukung pendidikan dasar berkualitas di wilayah ini.</p>
-        </div>
+ 
+
+    
+         <section class="content">
+        <h2>Visi dan Misi</h2 >
+        <p><strong>Visi:</strong> Sebagai dokumen perencanaan yang merupakan penjabaran dari dokumen RPJM Pekon, maka seluruh rencana program dan kegiatan pembangunan yang akan dlakukan oleh pekon secara bertahap dan berkesinambungan harus dapat mengantarkan tercapainya visi-misi pekon.</p>
+        
+        <p>Visi-Misi Pulau Benawang merupakan visi-misi kepala pekon juga diintegrasikan dengan keinginan bersama masyarakat pekon dimana proses penyusunannya dilakukan secara partisipatif mulai dari tingkat dusun sampai dengan tingkat pekon.</p>
+        <p><strong>"Terwujudnya pekon pulau benawang yang tertib, aman, nyaman , kondusif, mandiri, sejahtera."</strong></p>
+        <p><strong>Misi:</strong></p>
+        <ul>
+            <li>Menata pemerintahan pekon pulau benawangyang kompak dan bertanggung jawab dalam mengembankan amanat masyarakat.</li>
+            <li>Meningkatkan pelayanan masyarakat secara terpadu dan serius.</li>
+            <li>Mendorong peningkatan kesehatan masyarakat.</li>
+            <li>Membangun dan memelihara sarana dan prasarana pekon.</li>
+            <li>Menumbuh kembangkan usaha kecil menengah dan badan usaha milik pekon (BUM-PEKON)</li>
+            <li>Mencari dan menambah debet air.</li>
+            <li>Mewujudkan dan mengembangkan kegiatan keagamaan.</li>
+            <li>Bekerja Sama dengan tokoh masyarakat, tokoh adat dan tokoh pemuda dalam mengembangkan dan melestarikan seni, budaya dan olahraga</li>
+            <li>Mendorong majunya bidang pendidikan baik formal maupun informal.</li>
+            <li>Bekerja sama dengan dinas kehutanan, pertanian dan lain-lain.</li>
+        </ul>
     </section>
 
-    <section id="kegiatan">
-        <h2 class="section-title" class="center-text">Kegiatan Desa</h2>
-        <div class="card">
-            <h3 style="text-align: center;">Posyandu Raflesia</h3>
-            <p>Waktu: Setiap tanggal 16 atau 17</p>
-            <p>Deskripsi: Posyandu Raflesia adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesehatan dan tumbuh kembang anak-anak. Dengan komitmen menjadi posyandu ramah anak, layanan utamanya meliputi:</p>
-            <ul>
-                <li>Pemeriksaan pertumbuhan untuk memastikan berat dan tinggi badan sesuai standar kesehatan.</li>
-                <li>Imunisasi dasar untuk mencegah penyakit menular.</li>
-                <li>Pemberian Makanan Tambahan (PMT) untuk mendukung gizi anak.</li>
-                <li>Edukasi kesehatan bagi orang tua tentang pola asuh, gizi, dan pencegahan penyakit.</li>
-                <li>Stimulasi tumbuh kembang melalui permainan edukatif.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3 style="text-align: center;">Posyandu Secancanan</h3>
-            <p>Waktu: Setiap tanggal 16 atau 17</p>
-            <p>Deskripsi: Posyandu Secancanan adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesejahteraan lansia. Posyandu ini menyediakan berbagai layanan untuk mendukung kesehatan fisik dan mental para lansia, seperti:</p>
-            <ul>
-                <li>Pemeriksaan kesehatan rutin, termasuk tekanan darah, gula darah, dan kolesterol.</li>
-                <li>Edukasi kesehatan tentang pola makan, pencegahan penyakit, dan gaya hidup sehat.</li>
-                <li>Senam lansia untuk menjaga kebugaran tubuh.</li>
-                <li>Konsultasi dengan tenaga kesehatan terkait kesehatan lansia.</li>
-                <li>Dukungan sosial melalui kegiatan kelompok untuk mempererat kebersamaan.</li>
-            </ul>
-        </div>
-    </section>
-
+    
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3 style="text-align: left;">Alamat Desa</h3>
-                <p class="text-align : left;">Pekon Pulau Benawang</p>
-                <p class="text-align : left;">Kecamatan Kota Agung Barat</p>
-                <p class="text-align : left;"> Kabupaten Tanggamus</p>
- 
+                <p><a href="https://maps.app.goo.gl/a7JXfiwTRT188GNv9" target="_blank">Dusun II Pematang Buah, Pulau Benawang, Kota Agung Barat, Tanggamus</a></p>
             </div>
+            
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
                 <p class="text-align : left;">Telepon: (021) 12345678</p>
-                <p class="text-align : left;">Email: info@desaxyz.id</p>
+                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left; ">Jam Operasional</h3>
@@ -194,7 +202,5 @@
             <pc class="center-text">&copy; 2025 Pekon Pulau Benawang. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
-    
-    
 </body>
 </html>
