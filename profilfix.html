@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi</title>
+    <title>Website Desa</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,12 @@
             margin: 0;
             padding: 0;
         }
+        header {
+         position: relative;
+         height: 300px; 
+         overflow: hidden;
+        }
+
         nav {
         background-color: rgba(255, 255, 255, 0.3); 
         backdrop-filter: blur(10px); 
@@ -48,6 +54,7 @@
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
+        
         .card {
             background: #f9f9f9;
             border: 1px solid #ddd;
@@ -56,17 +63,6 @@
             border-radius: 5px;
             text-align: left;
         }
-        .photo-container img {
-        max-width: 45%; /* Kurangi ukuran agar dua foto muat di satu baris */
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .photo-container {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
         p {
             text-align: justify;
         }
@@ -141,72 +137,78 @@
         text-align: center; 
     }
 }
-    </style>
+</style>
 </head>
 <body>
     <nav>
         <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
         <a href="index.html" >BERANDA</a>
-        <a href="profilfix.html" >PROFIL DESA</a>
+        <a href="profilfix.html" class="active" >PROFIL DESA</a>
         <a href="sumberfix.html">MATA PENCAHARIAN</a>
-        <a href="infofix.html" class="active">INFORMASI</a>
+        <a href="infofix.html">INFORMASI</a>
     </nav>
-    <section id="sekolah">
-        <h2 class="section-title">Sekolah di Pekon Pulau Benawang</h2>
-        <div class="card">
-            <h3 style="text-align: center;">SD Negeri 1 Pekon Pulau Benawang</h3>
-            <div class="photo-container">
-                <img src="aset/pantai.jpeg" alt="Foto Sekolah">
-                <img src="zset/pantai.jpeg" alt="foto 2">
-            </div>
-            <p>SDN 1 Pekon Pulau Benawang merupakan satu-satunya SD yang beroperasi di pekon pulau benawang dengan jumlah siswa yang terhitung saat ini adalah 80 siswa...</p>
-        </div>
-    </section>
-    
-    <section id="kegiatan">
-        <h2 class="section-title">Kegiatan Desa</h2>
-        
-        <div class="card">
-            <h3 style="text-align: center;">Posyandu Raflesia</h3>
-            <div class="photo-container">
-                <img src="aset/pekon.jpeg" alt="Foto Posyandu Raflesia">
-                <img src="aset/pekon.jpeg" alt="Foto 2">
-            </div>
-            <p>Waktu: Setiap tanggal 16 atau 17</p>
-            <p>Deskripsi: Posyandu Raflesia adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesehatan dan tumbuh kembang anak-anak...</p>
-        </div>
-        
-        <div class="card">
-            <h3 style="text-align: center;">Posyandu Secancanan</h3>
-            <div class="photo-container">
-                <img src="aset/pekon.jpeg" alt="Foto Posyandu Secancanan">
-                <img src="aset/pekon.jpeg" alt="foto 2">
-            </div>
-            <p>Waktu: Setiap tanggal 16 atau 17</p>
-            <p>Deskripsi: Posyandu Secancanan adalah pusat pelayanan kesehatan masyarakat yang berfokus pada kesejahteraan lansia...</p>
-        </div>
-    </section>
-    
 
+    <header style="margin-bottom: 0;">
+        <h1 style="text-align: center; margin-bottom: 10px;">Profil Pekon</h1>
+        <p style="text-align: center; margin-bottom: 0;">Kenali Pekon Pulau Benawang Lebih Dekat</p>
+    </header>
+    
+<div style="
+    background-image: url('aset/pantai.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 500px; 
+    width: 50%;
+    margin: 0 auto; 
+    margin-top: -150px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+">
+</div>
+
+         <section class="content">
+        <h2>Visi dan Misi</h2 >
+        <p><strong>Visi:</strong> Sebagai dokumen perencanaan yang merupakan penjabaran dari dokumen RPJM Pekon, maka seluruh rencana program dan kegiatan pembangunan yang akan dlakukan oleh pekon secara bertahap dan berkesinambungan harus dapat mengantarkan tercapainya visi-misi pekon.</p>
+        
+        <p>Visi-Misi Pulau Benawang merupakan visi-misi kepala pekon juga diintegrasikan dengan keinginan bersama masyarakat pekon dimana proses penyusunannya dilakukan secara partisipatif mulai dari tingkat dusun sampai dengan tingkat pekon.</p>
+        <p><strong>"Terwujudnya pekon pulau benawang yang tertib, aman, nyaman , kondusif, mandiri, sejahtera."</strong></p>
+        <p><strong>Misi:</strong></p>
+        <ul>
+            <li>Menata pemerintahan pekon pulau benawangyang kompak dan bertanggung jawab dalam mengembankan amanat masyarakat.</li>
+            <li>Meningkatkan pelayanan masyarakat secara terpadu dan serius.</li>
+            <li>Mendorong peningkatan kesehatan masyarakat.</li>
+            <li>Membangun dan memelihara sarana dan prasarana pekon.</li>
+            <li>Menumbuh kembangkan usaha kecil menengah dan badan usaha milik pekon (BUM-PEKON)</li>
+            <li>Mencari dan menambah debet air.</li>
+            <li>Mewujudkan dan mengembangkan kegiatan keagamaan.</li>
+            <li>Bekerja Sama dengan tokoh masyarakat, tokoh adat dan tokoh pemuda dalam mengembangkan dan melestarikan seni, budaya dan olahraga</li>
+            <li>Mendorong majunya bidang pendidikan baik formal maupun informal.</li>
+            <li>Bekerja sama dengan dinas kehutanan, pertanian dan lain-lain.</li>
+        </ul>
+    </section>
+
+    
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3 style="text-align: left;">Alamat Desa</h3>
                 <p><a href="https://maps.app.goo.gl/a7JXfiwTRT188GNv9" target="_blank">Dusun II Pematang Buah, Pulau Benawang, Kota Agung Barat, Tanggamus</a></p>
             </div>
+
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
                 <p class="text-align : left;">Telepon: (021) 12345678</p>
                 <p class="text-align : left;">Email: info@desaxyz.id</p>
             </div>
             <div class="footer-section">
-                <h3 style="text-align: left;">Jam Operasional</h3>
+                <h3 style="text-align: left; ">Jam Operasional</h3>
                 <p class="text-align : left;">Senin - Jumat: 08.00 - 16.00</p>
                 <p class="text-align : left;">Sabtu, Minggu & Hari Libur: Tutup</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p style="text-align: center;" >&copy; 2025 Pekon Pulau Benawang</p>        </div>
+            <p style="text-align: center;" >&copy; 2025 Pekon Pulau Benawang</p>
+        </div>
     </footer>
 </body>
 </html>
