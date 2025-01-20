@@ -59,11 +59,12 @@
         .photo-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 20px;
             flex-wrap: wrap;
         }
         .photo-container img {
-            max-width: 30%;
+            max-width: 150px;
+            max-height: 100px; /* Ukuran maksimal gambar diubah */
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -147,9 +148,9 @@
     <nav>
         <img src="aset/logotanggamus.png" alt="Logo Desa" style="height: 50px; float: left; margin-left: 15px;">
         <a href="index.html" >BERANDA</a>
-        <a href="profilfix.html" >PROFIL DESA</a>
+        <a href="profilfixhtml" >PROFIL DESA</a>
         <a href="sumberfix.html" class="active"> MATA PENCAHARIAN</a>
-        <a href="infofix.html">INFORMASI</a>
+        <a href="informasifix.html">INFORMASI</a>
     </nav>
     <header>
         <h1 style="text-align: center;">Sumber Mata Pencaharian</h1>
@@ -157,24 +158,33 @@
     </header>
 
     <section id="mata-pencaharian">
-        
+      
         <p style="text-align: center;">Sumber Mata Pencaharian di Pekon Pulau Benawang terfokuskan pada hasil perkebunan yang didistribusikan kepada masyarakat luar untuk dijual. Berikut ini adalah Sumber Mata Pencaharian di Pekon Pulau Benawang:</p>
         <div class="card">
             <h3 style="text-align: center;">Pertanian</h3>
             <p>Produk: Padi dan Sayur-sayuran</p>
             <div class="photo-container">
-                <img src="aset/pekon.jpeg" alt="Lahan Pertanian">
-                <img src="aset/pekon.jpeg" alt="Petani di Sawah">
-                <img src="aset/pantai.jpeg" alt="Hasil Panen Padi">
+                <img src="aset/jagung.png" alt="Lahan Pertanian">
+                <img src="aset/kacang.png" alt="Petani di Sawah">
+                <img src="aset/padi.png" alt="Hasil Panen Padi">
+                <img src="aset/terong.png" alt="Lahan Pertanian">
+                <img src="aset/bayam.png" alt="Petani di Sawah">
+                <img src="aset/pakis.png" alt="Hasil Panen Padi">  
+                <img src="aset/bayamm.png" alt="Hasil Panen Padi"> 
             </div>
         </div>
         <div class="card">
             <h3 style="text-align: center;">Pekebunan</h3>
-            <p>Produk Unggulan: Buah-buahan seperti manggis, durian, kelapa, ketupak.</p>
+            <p>Produk Unggulan: Buah-buahan seperti manggis, durian, kelapa, ketupa, pepaya, alpukat, dll.</p>
             <div class="photo-container">
-                <img src="aset/pekon.jpeg" alt="Lahan Perkebunan">
-                <img src="aset/pantai.jpeg" alt="Petani Memetik Buah">
-                <img src="aset/pekon.jpeg" alt="Hasil Panen Buah">
+                <img src="aset/ketupa.png" alt="Lahan Pertanian">
+                <img src="aset/durian.png" alt="Petani di Sawah">
+                <img src="aset/manggis.png" alt="Hasil Panen Padi">
+                
+                <img src="aset/alpukat.png" alt="Lahan Pertanian">
+                <img src="aset/kelapa.png" alt="Petani di Sawah">
+                <img src="aset/pepaya.png" alt="Hasil Panen Padi">
+               
             </div>
         </div>
     </section>
@@ -187,9 +197,9 @@
             </div>
             <div class="footer-section">
                 <h3 style="text-align: left;">Kontak</h3>
-                <p>Telepon: (021) 12345678</p>
-                <p>Email: info@desaxyz.id</p>
+                <p class="text-align : left;">Email: pulaubenawang@gmail.com</p>
             </div>
+
             <div class="footer-section">
                 <h3 style="text-align: left;">Jam Operasional</h3>
                 <p>Senin - Jumat: 08.00 - 16.00</p>
